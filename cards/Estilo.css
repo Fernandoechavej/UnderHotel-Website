@@ -63,3 +63,73 @@ font-size: 40px;
     -webkit-text-fill-color: #ffffff;
     float: right;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 0;
+}
+
+body {
+    margin: 0;
+}
+
+#Titulo {
+    width: calc(100% - 32px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 0;
+    gap: 12px;
+}
+
+#Titulo > div {
+    flex: 0 0 auto;
+}
+
+#Logo {
+    width: clamp(56px, 10vw, 100px);
+    flex: 0 0 auto;
+}
+
+#Hotel {
+    min-width: 0;
+    margin: 0;
+    font-size: clamp(22px, 5vw, 40px);
+    overflow-wrap: anywhere;
+}
+
+#Return {
+    display: inline-block;
+    margin-left: auto;
+    padding: 10px 14px;
+    border: 2px solid #bbab20;
+    border-radius: 10px;
+    background-color: #250000;
+    font-size: clamp(16px, 3vw, 23px);
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    float: none;
+}
+
+#Return:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    #Titulo {
+        width: calc(100% - 24px);
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #Return {
+        padding: 8px 12px;
+    }
+}
