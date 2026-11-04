@@ -18,6 +18,15 @@ html {
 }
 body{
     color: #ffffff;
+    min-width: 0;
+    margin: 0;
+    padding: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -38,28 +47,109 @@ body > div > div > a{
 #Titulo{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
-    width: 100%;
+    width: min(100%, 1100px);
+    margin: 0 auto;
 }
 #Titulo > div {
     margin-left: auto;
 }
 #Logo {
     display: block;
-    width: min(100%, 100px);
+    flex: 0 0 auto;
+    width: clamp(56px, 8vw, 100px);
     height: auto;
-    float: left;
 }
 
 #Hotel {
-font-family:"MonsterF";
-font-size: 40px;
+    margin: 0;
+    font-family: "MonsterF";
+    font-size: clamp(24px, 5vw, 40px);
+    line-height: 1.1;
+    overflow-wrap: anywhere;
 }
 
-#Return{
+#Return {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
     font-family: "DeterminationMono";
-    font-size: 23px;
+    font-size: clamp(18px, 3vw, 23px);
     color: #ffffff;
     -webkit-text-fill-color: #ffffff;
-    float: right;
+}
+
+#Return:focus-visible {
+    outline: 2px solid #bbab20;
+    outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    #Titulo {
+        gap: 8px;
+    }
+
+    #Titulo > div {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        min-width: 0;
+    }
+
+    body {
+        padding: 12px;
+    }
+
+    #Titulo {
+        flex-wrap: wrap;
+        gap: 8px;
+        min-width: 0;
+    }
+
+    #Logo {
+        width: clamp(48px, 15vw, 72px);
+        flex: 0 0 auto;
+    }
+
+    #Hotel {
+        min-width: 0;
+        font-size: clamp(24px, 8vw, 36px);
+        line-height: 1;
+        overflow-wrap: anywhere;
+    }
+
+    #Titulo > div {
+        margin-left: auto;
+    }
+
+    #Titulo > div > a {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+    }
+
+    #Return {
+        float: none;
+        margin: 0;
+        padding: 8px 10px;
+        font-size: 18px;
+        white-space: nowrap;
+    }
 }
