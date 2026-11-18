@@ -38,6 +38,7 @@ html {
  border-radius: 10px; /* Applies a uniform radius to all corners */
  background-color: #250000;
   font-family: "DeterminationMono";
+
 }
 #Tex2{
     color: #ffffff;
@@ -216,6 +217,11 @@ body > div > div > a {
     padding: 8px 10px;
   }
 
+  #Conta{
+  color: #ffffff;
+  transform: translateY(-31px);
+  }
+
   #Tex1,
   #Tex2 {
     width: 100%;
@@ -223,6 +229,7 @@ body > div > div > a {
     font-size: 16px;
     line-height: 1.5;
     overflow-wrap: anywhere;
+    transform: translateY(-25px);
   }
 
   #Container1 {
@@ -235,6 +242,7 @@ body > div > div > a {
   #Foto1 {
     width: 100%;
     flex-basis: auto;
+    transform: translateY(-25px);
   }
 
   .Cards1 {

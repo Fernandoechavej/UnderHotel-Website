@@ -124,15 +124,13 @@ body > div > div > a{
     }
 
     #Logo {
-        width: clamp(48px, 15vw, 72px);
+        width: 72px;
         flex: 0 0 auto;
     }
 
     #Hotel {
         min-width: 0;
-        font-size: clamp(24px, 8vw, 36px);
-        line-height: 1;
-        overflow-wrap: anywhere;
+        font-size: 28px;
     }
 
     #Titulo > div {
@@ -148,169 +146,9 @@ body > div > div > a{
     #Return {
         float: none;
         margin: 0;
+        transform: translateY(-35px);
         padding: 8px 10px;
         font-size: 18px;
         white-space: nowrap;
     }
 }
-
-.Caixa-Teste {
-    color: #ffffff;
-    padding-top: 10px;
-    padding-right: 19px;
-    padding-left: 19px;
-    padding-bottom: 10px;
-    border: 2px solid #04053f;
-    border-radius: 10px;
-    background-color: #01010e;
-    font-family: "DeterminationMono";
-}
-
-.Textos {
-    max-width: 100%;
-    min-width: 0;
-    overflow-wrap: anywhere; /*Codigo que faz a magia pra deixa tudo lindo e Cheiroso*/
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    .Textos {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 600px) {
-    .Textos {
-      padding-top: 30px;
-      padding-right: 19px;
-      padding-left: 19px;
-      padding-inline-end: 30px;
-        font-size: clamp(16px, 4.2vw, 18px);
-        line-height: 1.45;
-    }
-}
-
-
-
-
-/*=============== VARIABLES ===============*/
-
-:root {
-  --accent-color: #bbab20;
-}
-
-/*=============== BASE ===============*/
-
-* {
-  box-sizing: border-box;
-  font-size: 25px;
-}
-
-#BD2{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-}
-
-#Nome-painel {
-  font-size: 23px;
-}
-
-.Painel-1 {
-  display: flex;
-  flex-direction: column;
-  min-height:400px;
-  max-height: auto;
-  min-width: 1100px;
-  max-width: 1101px;
-}
-
-.panel {
-  position: relative;
-  display: grid;
-  grid-template-rows: auto 0fr;
-    color: #ffffff;
-    box-sizing: border-box;
-    border: 2px solid #bbab20;
-    border-radius: 24px;
-    background-color: #250000;
-    font-family: "DeterminationMono";
-
-  height: auto;
-  margin: 10px;
-  cursor:zoom-in;
-  transition: grid-template-rows 0.4s ease;
-  overflow: hidden;
-}
-
-.panel::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0px;
-  width: 100.1%;
-  height: 45px;
-  background-color: #140000;
-  border: 2px solid #bbab20;
-      border-radius: 24px;
-}
-
-.panel.active {
-  grid-template-rows: auto 1fr;
-}
-
-
-.panel-content {
-  display: flex;
-  align-items: flex-start;
-  min-height: 0;
-  overflow: hidden;
-padding-left: 12px;
-padding-right: 12px;
-}
-
-.panel-content img {
-  width: 150px;
-  height: auto;
-  object-fit: cover;
-  flex-shrink: 0;
-  
-    position: relative;
-  display: grid;
-  grid-template-rows: auto 0fr;
-    color: #ffffff;
-    box-sizing: border-box;
-    border: 2px solid #bbab20;
-    border-radius: 24px;
-    background-color: #250000;
-}
-
-.setting-title {
-  display: flex;
-  margin: 10px 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.setting-title h3 {
-  margin: 0 10px;
-}
-
-.panel.active .setting-title {
-  color: var(--accent-color);
-}
-
-.setting-content {
-  opacity: 0;
-  margin: 16px 20px;
-  line-height: 28px;
-  transition: opacity 0.2s ease-in;
-  position: relative;
-  z-index: 1;
-}
-
-.panel.active .setting-content {
-  opacity: 1;
-  transition: opacity 0.2s ease-in 0.3s;
-} 
