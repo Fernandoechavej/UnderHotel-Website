@@ -124,13 +124,13 @@ body > div > div > a{
     }
 
     #Logo {
-        width: 14%;
+        width: 15%;
         flex: 0 0 auto;
     }
 
     #Hotel {
         min-width: 0;
-        font-size: 140%;
+        font-size: 150%;
     }
 
     #Titulo > div {
