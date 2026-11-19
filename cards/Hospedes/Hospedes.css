@@ -152,3 +152,135 @@ body > div > div > a{
         white-space: nowrap;
     }
 }
+
+.Ficha {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: clamp(16px, 3vw, 32px);
+    width: min(100%, 1100px);
+    margin: 24px auto 0;
+    padding: clamp(16px, 3vw, 28px);
+    color: #ffffff;
+    padding-top: 30px;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-bottom: 30px;
+ border: 2px solid #756b0f;
+ border-radius: 10px;
+    --s: 89px;
+    --c1: #1d0000;
+    --c2: #180202;
+    --_g: 80%, var(--c1) 25.4%, #0000 26%;
+    background-color: var(--c2);
+    background:
+        radial-gradient(at 80% var(--_g)),
+        radial-gradient(at 20% var(--_g)),
+        conic-gradient(from -45deg at 50% 41%, var(--c1) 90deg, var(--c2) 0)
+            calc(var(--s) / 2) 0;
+    background-size: var(--s) var(--s);
+
+}
+
+.Ficha .ficha-fot {
+    flex: 0 0 28%;
+    max-width: 28%;
+    width: 28%;
+    height: auto;
+    order: 0;
+        color: #ffffff;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+ border: 2px solid #bbab20;
+ border-radius: 10px; /* Applies a uniform radius to all corners */
+ background-color: #250000;
+
+}
+
+.Ficha p {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    white-space: pre-wrap;
+    line-height: 1.35;
+    overflow-wrap: break-word;
+    order: 1;
+        color: #ffffff;
+    padding-top: 30px;
+    padding-right: 19px;
+    padding-left: 19px;
+    padding-bottom: 30px;
+ border: 2px solid #bbab20;
+ border-radius: 10px; /* Applies a uniform radius to all corners */
+ background-color: #250000;
+
+}
+
+.Ficha .foto-com-texto {
+    display: flex;
+    flex: 0 0 28%;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.Ficha .foto-com-texto .ficha-fot {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.Ficha .foto-com-texto .Nome {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-family: MonsterF;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .Ficha {
+        flex-direction: column;
+    }
+
+    .Ficha .foto-com-texto {
+        flex: 0 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .Ficha .ficha-fot {
+        flex: 0 0 auto;
+        width: min(50%, 180px);
+        max-width: 100%;
+    }
+
+    .Ficha .foto-com-texto .ficha-fot {
+        flex: 0 0 38%;
+        width: 38%;
+        max-width: 150px;
+    }
+
+    .Ficha .foto-com-texto .Nome {
+        flex: 1 1 0;
+        min-width: 0;
+        width: auto;
+        padding: 14px 10px;
+        transform: translateY(25px);
+
+                color: #ffffff;
+ border: 2px solid #250000;
+ border-radius: 10px; /* Applies a uniform radius to all corners */
+ background-color: #250000;
+ font-size: 19.49px;
+ font-family: DeterminationMono;
+    }
+
+    .Ficha > p {
+        width: 100%;
+    }
+}
