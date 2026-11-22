@@ -154,10 +154,6 @@ body > div > div > a{
 }
 
 .Ficha {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: clamp(16px, 3vw, 32px);
     width: min(100%, 1100px);
     margin: 24px auto 0;
     padding: clamp(16px, 3vw, 28px);
@@ -180,6 +176,21 @@ body > div > div > a{
             calc(var(--s) / 2) 0;
     background-size: var(--s) var(--s);
 
+}
+
+.Ficha .ficha-summary {
+    cursor: pointer;
+    font-family: DeterminationMono;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.Ficha .ficha-conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: clamp(16px, 3vw, 32px);
+    margin-top: 16px;
 }
 
 .Ficha .ficha-fot {
@@ -242,7 +253,7 @@ body > div > div > a{
 }
 
 @media (max-width: 600px) {
-    .Ficha {
+    .Ficha .ficha-conteudo {
         flex-direction: column;
     }
 
@@ -280,7 +291,7 @@ body > div > div > a{
  font-family: DeterminationMono;
     }
 
-    .Ficha > p {
+    .Ficha .ficha-conteudo > p {
         width: 100%;
     }
 }
