@@ -178,6 +178,13 @@ body > div > div > a{
 
 }
 
+.FichaUH {
+    width: min(100%, 1100px);
+    margin: 24px auto 0;
+    padding: clamp(16px, 3vw, 28px);
+    color: #ffffff;
+}
+
 .Ficha .ficha-summary {
     cursor: pointer;
     font-family: DeterminationMono;
@@ -294,4 +301,12 @@ body > div > div > a{
     .Ficha .ficha-conteudo > p {
         width: 100%;
     }
+      .FichaUH .ficha-conteudo > p {
+        width: 100%;
+    }
+}
+
+.Feku-0 .Ficha {
+    background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574609370405277766/537_Sem_Titulo_20261123231518.png?ex=6b0644c0&is=6b04f340&hm=29cd5434fdae2c5062072ceb214378963e6b5378a1107a5e597cd85641ea9088&);
+    
 }
