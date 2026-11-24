@@ -161,6 +161,10 @@ body > div > div > a{
     a{
         color: #dac725;
     }
+
+         a:hover{
+        color:#ffef5b;
+    }
     padding-top: 30px;
     padding-right: 19px;
     padding-left: 19px;
@@ -310,14 +314,16 @@ body > div > div > a{
 }
 
 .Feku-0 .Ficha {
-    background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574610469543477329/537_Sem_Titulo_20261123231940.png?ex=6b0645c6&is=6b04f446&hm=691d6ca68ad88a702ff571e575a5cb3ddce91d4245629e3c9001cedc17ca6d47&);
+    background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574764880937095188/537_Sem_Titulo_20261124093231.png?ex=6b06d595&is=6b058415&hm=a8b0b099c3f05c60d3cbdc269d2bfa5035e49a4d427b63ef5361dfbbb9969db0&);
     background-size: 122px;
-     a:hover{
-        color:#002897;
-    }
 }
 
 .Kiyo .Ficha {
     background-image: url(https://media.discordapp.net/attachments/831175605016985640/1574631743854477362/538_Sem_Titulo_20261124004415.png?ex=6b065996&is=6b050816&hm=a3434dad777371b2f70de6e30b74c1bdca92a647bc14771e2437cd06ebffbf9f&format=webp&quality=lossless);
+    background-size: 122px;
+}
+
+.Bia_P .Ficha {
+    background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574764875127988236/537_Sem_Titulo_20261124093235.png?ex=6b06d593&is=6b058413&hm=d979ba0b846c59ace6498fc8df28bbcf9441acf3fc9e63bf84b40885dac3d37e&);
     background-size: 122px;
 }
