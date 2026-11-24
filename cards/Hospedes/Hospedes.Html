@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hóspede - Underhotel</title>
+    <title>Hospedês - Underhotel</title>
     <link rel="icon" type="image/x-icon" href="../../src/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../../src/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../../src/apple-touch-icon.png">
@@ -16,167 +16,6 @@
 
 <div><a href="../../index.html" id="Return">Retornar</a></div>
 </div>
-
-<main class="hospedes-app">
-    <section class="community-panel" aria-labelledby="community-title">
-        <h2 id="community-title">Virar um Hóspede</h2>
-        <p>Crie uma ficha para enviar à equipe. Ela só aparecerá aqui depois de aprovada.</p>
-
-        <div class="community-tabs" role="tablist" aria-label="Fichas da comunidade">
-            <button class="community-tab" id="tab-lista" type="button" role="tab" aria-selected="true" aria-controls="painel-lista">Ver Hóspedes</button>
-            <button class="community-tab" id="tab-criar" type="button" role="tab" aria-selected="false" aria-controls="painel-criar" tabindex="-1">Criar Hóspede</button>
-        </div>
-
-        <section class="community-tabpanel" id="painel-lista" role="tabpanel" aria-labelledby="tab-lista">
-            <p class="community-status" id="lista-status" aria-live="polite">Carregando fichas aprovadas...</p>
-            <div class="community-cards" id="community-cards"></div>
-        </section>
-
-        <section class="community-tabpanel" id="painel-criar" role="tabpanel" aria-labelledby="tab-criar" hidden>
-            <form id="guest-form">
-                <label class="guest-image-label">Link da imagem *
-                    <input name="image_url" type="url" maxlength="500" placeholder="https://..." required>
-                </label>
-                <label class="guest-template-label" for="guest-template">Sua ficha</label>
-                <p class="guest-form-hint" id="guest-template-hint">Preencha as respostas depois de cada ↳. O nome do personagem é obrigatório.</p>
-                <textarea id="guest-template" name="ficha_text" maxlength="12000" rows="38" required aria-describedby="guest-template-hint">╭────────────────────── • ‧
-│
-│
-│— ꧁|᯾ғɪᴄʜᴀ ᴜɴᴅᴇʀʜᴏᴛᴇʟ᯾|꧂ —
-│
-│─────────
-│
-│— Básico: —
-│
-│─────────
-│
-│ '◌°. Nome e sobrenome -  ⋆
-│↳
-│ '◌°. Idade -  ⋆
-│↳
-│ '◌°. Gênero -  ⋆
-│↳
-│ '◌°. Sexualidade -  ⋆
-│↳
-│ '◌°. Apelido -  ⋆
-│↳
-│ '◌°. Nacionalidade -  ⋆
-│↳
-│ '◌°. Família -  ⋆
-│↳
-│ '◌°. Raça/espécie -  ⋆
-│↳
-│
-│━━━━━━━━━━━━━━━━━
-│
-│— Aparência: —
-│
-│─────────
-│
-│ '◌°. Cabelos -  ⋆
-│↳
-│ '◌°. Estilo dos cabelos -  ⋆
-│↳
-│ '◌°. Cor dos olhos -  ⋆
-│↳
-│ '◌°. Altura -  ⋆
-│↳
-│ '◌°. Peso -  ⋆
-│↳
-│ '◌°. Tonalidade da pele (cor) -  ⋆
-│↳
-│ '◌°. Manchas -  ⋆
-│↳
-│ '◌°. Marcas de nascimento -  ⋆
-│↳
-│ '◌°. Sardas -  ⋆
-│↳
-│ '◌°. Piercings -  ⋆
-│↳
-│ '◌°. Tatuagem -  ⋆
-│↳
-│ '◌°. Cicatriz -  ⋆
-│↳
-│
-│━━━━━━━━━━━━━━━━━
-│
-│— Personalidade: —
-│
-│─────────
-│
-│ '◌°. Agrada -  ⋆
-│↳
-│ '◌°. Desagrada -  ⋆
-│↳
-│ '◌°. Comida(s) favorita(s) -  ⋆
-│↳
-│ '◌°. Comida(s) detestada(s) -  ⋆
-│↳
-│ '◌°. Música favorita -  ⋆
-│↳
-│ '◌°. Cor favorita -  ⋆
-│↳
-│ '◌°. Traços bons -  ⋆
-│↳
-│ '◌°. Traços ruins -  ⋆
-│↳
-│ '◌°. Dons -  ⋆
-│↳
-│ '◌°. Hobbies -  ⋆
-│↳
-│ '◌°. Manias -  ⋆
-│↳
-│ '◌°. Medos -  ⋆
-│↳
-│
-│━━━━━━━━━━━━━━━━━
-│
-│— Relacionamentos: —
-│
-│─────────
-│
-│ '◌°. Amigos -  ⋆
-│↳
-│ '◌°. Mãe -  ⋆
-│↳
-│ '◌°. Pai -  ⋆
-│↳
-│ '◌°. Irmãos -  ⋆
-│↳
-│ '◌°. Namorado(a) -  ⋆
-│↳
-│ '◌°. Filhos -  ⋆
-│↳
-│
-│━━━━━━━━━━━━━━━━━
-│
-│— Batalha: —
-│
-│─────────
-│
-│ '◌°. Poder -  ⋆
-│↳
-│ '◌°. Habilidades -  ⋆
-│↳
-│ '◌°. Habilidades passivas -  ⋆
-│↳
-│ '◌°. Estilo de luta -  ⋆
-│↳
-│ '◌°. Armas/itens -  ⋆
-│↳
-│
-└────────────────────═༻</textarea>
-                <div class="guest-form-actions">
-                    <button class="community-action" id="preview-button" type="button">Pré-visualizar</button>
-                    <button class="community-action community-action-primary" type="submit">Enviar para aprovação</button>
-                </div>
-            </form>
-            <p class="community-status" id="form-status" role="status" aria-live="polite"></p>
-            <div id="guest-preview"></div>
-        </section>
-    </section>
-
-    <h2 class="examples-title">Hóspedes</h2>
 
 <div class="Bia_P">
 <details class="Ficha">
@@ -375,7 +214,7 @@
 │   '◌°. Estilo dos cabelos -  ⋆
 │↳Bagunçado mais lisos
 │   '◌°. Cor dos olhos -  ⋆
-│↳Azuis
+│↳ Azuis
 │    '◌°. Altura -  ⋆
 │↳1,67
 │    '◌°. Peso - ⋆
@@ -411,7 +250,7 @@
 │   '◌°. Comida(s) Detestada(s) -  ⋆
 │↳pizza.
 │   '◌°. Música Favorita -  ⋆
-│↳<a href="https://music.youtube.com/playlist?list=PLDP4O6nggUTc&si=KYvFDS2qUehGhrIt"> Playlist do Feku</a>
+│↳ <a href="https://music.youtube.com/playlist?list=PLDP4O6nggUTc&si=KYvFDS2qUehGhrIt"> Playlist do Feku</a>
 │   '◌°. Cor favorita -  ⋆
 │↳Azul
 │  '◌°. Traços bons -  ⋆
@@ -423,9 +262,9 @@
 │   '◌°. Hobbies -  ⋆
 │↳Robotica,Costura,Quimica
 │   '◌°. Manias -  ⋆
-│↳Abraçar
+│↳ Abraçar
 │   '◌°. Medos -  ⋆
-│↳Medo de Decepcionar todos a sua volta
+│↳ Medo de Decepcionar todos a sua volta
 │
 │━━━━━━━━━━━━━━━━━
 │
@@ -435,7 +274,7 @@
 │
 │
 │  '◌°. Amigos -  ⋆
-│↳Tommy Simmons
+│↳Tommy Simmon
 │   '◌°. Mãe -  ⋆
 │↳Britanny (Morta)
 │   '◌°. Pai -  ⋆
@@ -445,7 +284,7 @@
 │   '◌°. Namorado(ᴀ) -  ⋆
 │↳Nop
 │   '◌°. Filhos -  ⋆
-│↳Eco, Invest, P2
+│↳ Eco, Invest, P2
 │
 │━━━━━━━━━━━━━━━━━
 │
@@ -455,7 +294,7 @@
 │
 │
 │ '◌°. Poder -  ⋆
-│↳<a href="https://docs.google.com/document/d/1hWwlkEA18bNvZ2ge79KtREfM1h3ri6xk8babC9_tRnY/edit?usp=drivesdk">Poderes</a>
+│↳ <a href="https://docs.google.com/document/d/1hWwlkEA18bNvZ2ge79KtREfM1h3ri6xk8babC9_tRnY/edit?usp=drivesdk">Poderes</a>
 │   '◌°. Habilidades -  ⋆
 │↳Parkuor, Stealth, Inventor
 │   '◌°. Habilidades passivas -  ⋆
@@ -490,21 +329,21 @@
     │─────────
     │
     │ '◌°. Nome e sobrenome -  ⋆
-    │↳Eco Nes
+    │↳ Eco Nes
     │ '◌°. Idade - ⋆
-    │↳Robô
+    │↳ Robô
     │ '◌°. Gênero -  ⋆
     │↳Prefere ser Chamado Pelo Maculino
     │ '◌°. Sexualidade -  ⋆
     │↳se descobrindo...
     │ '◌°. Apelido -  ⋆
-    │↳Plantinha, Filhão, Cabeça,
+    │↳ Plantinha, Filhão, Cabeça,
     │ '◌°. Nacionalidade -  ⋆
-    │↳Brasileiro
+    │↳ Brasileiro
     │ '◌°. Família -  ⋆
-    │↳Nes
+    │↳ Nes
     │  '◌°. Raça/espécie -  ⋆
-    │↳Robô da Feku Labs, v3.2.0
+    │↳ Robô da Feku Labs, v3.2.0
     │
     │━━━━━━━━━━━━━━━━━
     │
@@ -513,16 +352,16 @@
     │─────────
     │
     │ '◌°. Cabelos - ⋆
-    │↳de Vidro, no seu interior ah Um liquido 
+    │↳ de Vidro, no seu interior ah Um liquido 
     │azul que serve como a energia de Eco
     │   '◌°. Estilo dos cabelos -  ⋆
-    │↳Organizado mais ainda estilizado
+    │↳ Organizado mais ainda estilizado
     │   '◌°. Cor dos olhos -  ⋆
-    │↳Azul Brilhante
+    │↳ Azul Brilhante
     │    '◌°. Altura -  ⋆
-    │↳1,59
+    │↳ 1,59
     │    '◌°. Peso - ⋆
-    │↳120kg (Metal)
+    │↳ 120kg (Metal)
     │    '◌°. Tonalidade da pele ( ᴄᴏʀ) -  ⋆
     │↳Metal
     │   '◌°. Manchas -  ⋆
@@ -547,19 +386,19 @@
     │
     │
     │  '◌°. Agrada -  ⋆
-    │↳Natureza, Silencio, Sol
+    │↳ Natureza, Silencio, Sol
     │  '◌°. Desagrada -  ⋆
-    │↳a Escuridão, o Caos
+    │↳ a Escuridão, o Caos
     │   '◌°. Comida(s) Favorita(s) -  ⋆
-    │↳Bolinho de Pneu
+    │↳ Bolinho de Pneu
     │   '◌°. Comida(s) Detestada(s) -  ⋆
-    │↳Laminas de Ventilador
+    │↳ Laminas de Ventilador
     │   '◌°. Música Favorita -  ⋆
-    │↳<a href="https://www.youtube.com/watch?v=sj68q1QO1DQ&t=11s">Daisy Bell-hatsune Miku</a>
+    │↳ <a href="https://www.youtube.com/watch?v=sj68q1QO1DQ&t=11s">Daisy Bell-hatsune Miku</a>
     │   '◌°. Cor favorita -  ⋆
     │↳Verde e Azul
     │  '◌°. Traços bons -  ⋆
-    │↳Justo, ama a Natureza, amoroso
+    │↳ Justo, ama a Natureza, amoroso
     │   '◌°. Traços ruins -  ⋆
     │↳pavio curto, muito protetor
     │   '◌°. Dons -  ⋆
@@ -569,7 +408,7 @@
     │   '◌°. Manias -  ⋆
     │↳chamar os outros de Tio
     │   '◌°. Medos -  ⋆
-    │↳perder sua familia, o escuro
+    │↳ perder sua familia, o escuro
     │
     │━━━━━━━━━━━━━━━━━
     │
@@ -579,17 +418,17 @@
     │
     │
     │  '◌°. Amigos -  ⋆
-    │↳Olivia H.
+    │↳ Olivia H.
     │   '◌°. Mãe -  ⋆
-    │↳Feku
+    │↳ Feku
     │   '◌°. Pai -  ⋆
-    │↳Feku
+    │↳ Feku
     │   '◌°. Irmãos -  ⋆
-    │↳P2, Invest
+    │↳ P2, Invest
     │   '◌°. Namorado(ᴀ) -  ⋆
-    │↳Alguém...
+    │↳ Alguém...
     │   '◌°. Filhos -  ⋆
-    │↳N/A
+    │↳ N/A
     │
     │━━━━━━━━━━━━━━━━━
     │
@@ -599,7 +438,7 @@
     │
     │
     │ '◌°. Poder -  ⋆
-    │↳WIP
+    │↳ WIP
     │   '◌°. Habilidades -  ⋆
     │↳
     │   '◌°. Habilidades passivas -  ⋆
@@ -607,7 +446,7 @@
     │   '◌°. Estilo de luta - ⋆
     │↳
     │  '◌°. Armas/itens -  ⋆
-    │↳WIP
+    │↳ WIP
     │
     └────────────────────═༻
 </p>
@@ -909,7 +748,5 @@
 </details>
 </div>
 
-</main>
-<script src="Hospedes.js" defer></script>
 </body>
 </html>
