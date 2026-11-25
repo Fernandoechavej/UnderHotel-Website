@@ -391,5 +391,5 @@ body:has(#estado-toggle:checked) .Moon .Ficha {
 body:has(#estado-toggle:checked) .Andy .Ficha {
     background-image: url(https://media.discordapp.net/attachments/877923214083358760/1574983310235541514/545_Sem_Titulo_20261125000022.png?ex=6b07a102&is=6b064f82&hm=dfcacdb4547d08aa3ba6fd4d1673b42b065c2e8c5d2df5124a7d6b08f7f1d6c3&format=webp&quality=lossless&width=640&height=640);
     background-size: 122px;
-     border-color:#80106d
+     border-color:#80106d;
 }
