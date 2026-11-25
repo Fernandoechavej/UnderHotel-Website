@@ -70,6 +70,42 @@ body > div > div > a{
     overflow-wrap: anywhere;
 }
 
+/* O rótulo parece um botão; a caixa marcada representa o estado ligado. */
+.estado-toggle {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+#estado-toggle-label {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 22px;
+    color: #ffffff;
+    background: #250000;
+    border: 2px solid #bbab20;
+    border-radius: 8px;
+    font-family: "DeterminationMono";
+    cursor: pointer;
+}
+
+#estado-toggle:checked + #estado-toggle-label {
+    background: #691212;
+}
+
+#estado-toggle:focus-visible + #estado-toggle-label {
+    outline: 2px solid #bbab20;
+    outline-offset: 3px;
+}
+
 #Return {
     display: inline-flex;
     min-height: 44px;
@@ -146,10 +182,19 @@ body > div > div > a{
     #Return {
         float: none;
         margin: 0;
-        transform: translateY(-35px);
+        transform: translateY(-30px);
         padding: 8px 10px;
         font-size: 18px;
         white-space: nowrap;
+    }
+
+    #estado-toggle-label {
+    display: inline-flex;
+    min-height: 22px;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 11px;
+    transform: translateX(275px);
     }
 }
 
@@ -328,7 +373,23 @@ body > div > div > a{
 }
 
 .Moon .Ficha{
-    background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574947389670948894/545_Sem_Titulo_20261124213435.png?ex=6b077f8e&is=6b062e0e&hm=a83029d373e86665651b27b58272839125beafb99249a097fcc1c6cec22e657a&);
+    background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574952056165498901/537_Sem_Titulo_20261124215704.png?ex=6b0783e7&is=6b063267&hm=dfd1aa28366bb3d6778df6d1e94a4627f28513ea52d334f4c669f00db02f88d3&);
      background-size: 122px;
+    
+}
+body:has(#estado-toggle:checked) .Moon .Ficha {
+    background-image: url(https://media.discordapp.net/attachments/877923214083358760/1574947389670948894/545_Sem_Titulo_20261124213435.png?ex=6b077f8e&is=6b062e0e&hm=a83029d373e86665651b27b58272839125beafb99249a097fcc1c6cec22e657a&format=webp&quality=lossless&width=768&height=768);
+    background-size: 122px;
      border-color:#571080
+}
+
+.Andy .Ficha{
+    background-image: url(https://media.discordapp.net/attachments/877923214083358760/1574983310742913095/537_Sem_Titulo_20261125000105.png?ex=6b07a103&is=6b064f83&hm=1f7acd8823d480f3a92d4c03dcf43c5ce590a5d4c6af93aa83751558aad2229d&format=webp&quality=lossless&width=640&height=640);
+     background-size: 122px;
+    
+}
+body:has(#estado-toggle:checked) .Andy .Ficha {
+    background-image: url(https://media.discordapp.net/attachments/877923214083358760/1574983310235541514/545_Sem_Titulo_20261125000022.png?ex=6b07a102&is=6b064f82&hm=dfcacdb4547d08aa3ba6fd4d1673b42b065c2e8c5d2df5124a7d6b08f7f1d6c3&format=webp&quality=lossless&width=640&height=640);
+    background-size: 122px;
+     border-color:#80106d
 }
