@@ -331,4 +331,7 @@ body > div > div > a{
     background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574947389670948894/545_Sem_Titulo_20261124213435.png?ex=6b077f8e&is=6b062e0e&hm=a83029d373e86665651b27b58272839125beafb99249a097fcc1c6cec22e657a&);
      background-size: 122px;
      border-color:#500f75
+     a:hover{
+color: #973cc2;
+     }
 }
