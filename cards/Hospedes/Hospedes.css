@@ -232,9 +232,20 @@ body > div > div > a{
 
 .FichaUH {
     width: min(100%, 1100px);
-    margin: 24px auto 0;
-    padding: clamp(16px, 3vw, 28px);
+    text-overflow: clip;
     color: #ffffff;
+    background: #250000;
+    border: 2px solid #bbab20;
+    border-radius: 10px;
+}
+
+.FichaUH .ficha-summary {
+    cursor: pointer;
+    font-family: DeterminationMono;
+    color: #ffffff;
+    font-size: 19px;
+    transform: translateX(10px);
+    padding: 10px;
 }
 
 .Ficha .ficha-summary {
@@ -356,20 +367,98 @@ body > div > div > a{
       .FichaUH .ficha-conteudo > p {
         width: 100%;
     }
+
+    
 }
 .Bia_P .Ficha {
     background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574764875127988236/537_Sem_Titulo_20261124093235.png?ex=6b06d593&is=6b058413&hm=d979ba0b846c59ace6498fc8df28bbcf9441acf3fc9e63bf84b40885dac3d37e&);
     background-size: 122px;
+}
+body:has(#estado-toggle:checked) .Bia_P .Ficha {
+    background-image: url(https://media.discordapp.net/attachments/1575184984967352460/1575196298557259906/541_Sem_Titulo_20261125140732.png?ex=6b08675f&is=6b0715df&hm=a23ea27e6cbcd4033635461d04c84ea12f0b884106215abd34988bc19a812bf5&format=webp&quality=lossless&width=768&height=768);
+    background-size: 122px;
+     border-color:#1c0033;
+         p{
+        background-color: #2A004B;
+        border: 2px solid #1c0033;
+     }
+     @media (max-width: 600px) {
+        .Nome{
+      background-color: #2A004B;
+        border: 2px solid  #2A004B;
+        }
+    }
+    A{
+        color: #6c03c2;
+    }
+     A:hover{
+        color: #9340ff;
+    }
+    .FichaUH {
+        background-color: #2A004B;
+        border: 2px solid #1c0033;
+    }
 }
 
 .Feku-0 .Ficha {
     background-image: url(https://cdn.discordapp.com/attachments/877923214083358760/1574764880937095188/537_Sem_Titulo_20261124093231.png?ex=6b06d595&is=6b058415&hm=a8b0b099c3f05c60d3cbdc269d2bfa5035e49a4d427b63ef5361dfbbb9969db0&);
     background-size: 122px;
 }
+body:has(#estado-toggle:checked) .Feku-0 .Ficha {
+    background-image: url(https://media.discordapp.net/attachments/1575184984967352460/1575188323838726204/506_Sem_Titulo_20261125133552.png?ex=6b085ff1&is=6b070e71&hm=eae0aa49f65ff33f51d7753584ced733405e24ee8f0e4ab39ad860ad7a081f39&format=webp&quality=lossless&width=768&height=768);
+    background-size: 122px;
+     border-color:#030224;
+     p{
+        background-color: #0A0937;
+        border: 2px solid #030224;
+     }
+     @media (max-width: 600px) {
+       .Nome{
+        background-color: #0A0937;
+        border: 2px solid  #0A0937;
+        }
+    }
+    A{
+        color: #1b32ff;
+    }
+     A:hover{
+        color: #524fff;
+    }
+    .FichaUH {
+        background-color: #0A0937;
+        border: 2px solid #030224;
+    }
+}
 
 .Kiyo .Ficha {
     background-image: url(https://media.discordapp.net/attachments/831175605016985640/1574631743854477362/538_Sem_Titulo_20261124004415.png?ex=6b065996&is=6b050816&hm=a3434dad777371b2f70de6e30b74c1bdca92a647bc14771e2437cd06ebffbf9f&format=webp&quality=lossless);
     background-size: 122px;
+}
+body:has(#estado-toggle:checked) .Kiyo .Ficha {
+    background-image: url(https://media.discordapp.net/attachments/1575184984967352460/1575185066294779924/545_Sem_Titulo_20261125124757.png?ex=6b085ce9&is=6b070b69&hm=9d0469b59b4d1dbe60173fdf8e36ccd6f31fcda07a4efa2b6e5ceccd113c0155&format=webp&quality=lossless&width=640&height=640);
+    background-size: 200px;
+     border-color:#2c001a;
+
+          p{
+        background-color: #000000;
+        border: 2px solid #2c001a;
+     }
+     @media (max-width: 600px) {
+       .Nome{
+        background-color: #000000;
+        border: 2px solid  #000000;
+        }
+    }
+    A{
+        color: #ff821b;
+    }
+     A:hover{
+        color: #ff9e4f;
+    }
+    .FichaUH {
+        background-color: #000000;
+        border: 2px solid #2c001a;
+    }
 }
 
 .Moon .Ficha{
@@ -378,9 +467,29 @@ body > div > div > a{
     
 }
 body:has(#estado-toggle:checked) .Moon .Ficha {
-    background-image: url(https://media.discordapp.net/attachments/877923214083358760/1574947389670948894/545_Sem_Titulo_20261124213435.png?ex=6b077f8e&is=6b062e0e&hm=a83029d373e86665651b27b58272839125beafb99249a097fcc1c6cec22e657a&format=webp&quality=lossless&width=768&height=768);
+    background-image: url(https://media.discordapp.net/attachments/1575184984967352460/1575185067070718113/545_Sem_Titulo_20261124213435.png?ex=6b085ce9&is=6b070b69&hm=fba72ed49443f8c57be35bf290a4e9f024c0c117be03fd136ad3e0269b23d8ae&format=webp&quality=lossless&width=640&height=640);
     background-size: 122px;
-     border-color:#571080
+     border-color:#440966;
+               p{
+        background-color: #000000;
+        border: 2px solid #440966;
+     }
+     @media (max-width: 600px) {
+       .Nome{
+        background-color: #000000;
+        border: 2px solid  #000000;
+        }
+    }
+    A{
+        color: #ab1bff;
+    }
+     A:hover{
+        color: #d64fff;
+    }
+    .FichaUH {
+        background-color: #000000;
+        border: 2px solid #440966;
+    }
 }
 
 .Andy .Ficha{
@@ -392,4 +501,25 @@ body:has(#estado-toggle:checked) .Andy .Ficha {
     background-image: url(https://media.discordapp.net/attachments/877923214083358760/1574983310235541514/545_Sem_Titulo_20261125000022.png?ex=6b07a102&is=6b064f82&hm=dfcacdb4547d08aa3ba6fd4d1673b42b065c2e8c5d2df5124a7d6b08f7f1d6c3&format=webp&quality=lossless&width=640&height=640);
     background-size: 122px;
      border-color:#80106d;
+
+                    p{
+        background-color: #000000;
+        border: 2px solid #80106d;
+     }
+     @media (max-width: 600px) {
+       .Nome{
+        background-color: #000000;
+        border: 2px solid  #000000;
+        }
+    }
+    A{
+        color: #ec1bff;
+    }
+     A:hover{
+        color: #ff4ff6;
+    }
+    .FichaUH {
+        background-color: #000000;
+        border: 2px solid #80106d;
+    }
 }
