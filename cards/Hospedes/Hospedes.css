@@ -587,3 +587,35 @@ body:has(#estado-toggle:checked) .Guh .Ficha {
         border: 2px solid #0b0264;
     }
 }
+
+/*.Holder .Ficha{
+    background-image: url("");
+        background-size: 122px;
+     
+}*/
+body:has(#estado-toggle:checked) .Holder .Ficha {
+    background-image: url("https://static2.klipy.com/ii/e293a233a303a98e471f78d04e13a1b0/ad/7b/90ITwbUu.gif");
+        background-size: 122px;
+     border-color:#888888;
+    
+    p{
+        background-color: #000000;
+        border: 2px solid #888888;
+     }
+     @media (max-width: 600px) {
+       .Nome{
+        background-color: #000000;
+        border: 2px solid #000000;
+        }
+    }
+    A{
+        color: #fff01b;
+    }
+     A:hover{
+        color: #ffed4f;
+    }
+    .FichaUH {
+        background-color: #000000;
+        border: 2px solid #888888;
+    }
+}
