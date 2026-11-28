@@ -376,6 +376,20 @@ body > div > div > a{
     font-family: "DeterminationMono";
 }
 
+.fraction-control {
+    position: relative;
+}
+
+.fraction-text {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    color: #ffffff;
+    pointer-events: none;
+}
+
 .fraction-control input[type="range"] {
     width: 100%;
     height: 24px;
@@ -413,7 +427,7 @@ body:has(#estado-toggle:checked) .Bia_P .Ficha {
      }
      @media (max-width: 600px) {
         .Nome{
-      background-color: #34005D;
+        background-color: #34005D;
         border: 2px solid  #34005D;
         }
     }
@@ -424,6 +438,17 @@ body:has(#estado-toggle:checked) .Bia_P .Ficha {
         color: #9340ff;
     }
     .FichaUH {
+        background-color: #34005D;
+        border: 2px solid #1c0033;
+    }
+
+        .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: #1c0033;
+                box-shadow: -320px 0 0 320px #6b0096;
+    }
+
+    .fraction-control input[type="range"] {
         background-color: #34005D;
         border: 2px solid #1c0033;
     }
@@ -454,6 +479,17 @@ body:has(#estado-toggle:checked) .Feku-0 .Ficha {
         color: #524fff;
     }
     .FichaUH {
+        background-color: #0E0C53;
+        border: 2px solid #030224;
+    }
+
+    .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: #030224;
+                box-shadow: -320px 0 0 320px #000a96;
+    }
+
+    .fraction-control input[type="range"] {
         background-color: #0E0C53;
         border: 2px solid #030224;
     }
@@ -488,6 +524,16 @@ body:has(#estado-toggle:checked) .Kiyo .Ficha {
         background-color: #DF4E00;
         border: 2px solid #b62d03;
     }
+        .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: #b62d03;
+                box-shadow: -320px 0 0 320px #dd5709;
+    }
+
+    .fraction-control input[type="range"] {
+        background-color: #DF4E00;
+        border: 2px solid #b62d03;
+    }
 }
 
 .Moon .Ficha{
@@ -516,6 +562,16 @@ body:has(#estado-toggle:checked) .Moon .Ficha {
         color: #d64fff;
     }
     .FichaUH {
+        background-color: #000000;
+        border: 2px solid #440966;
+    }
+        .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: #440966;
+                box-shadow: -320px 0 0 320px #7d0096;
+    }
+
+    .fraction-control input[type="range"] {
         background-color: #000000;
         border: 2px solid #440966;
     }
@@ -551,6 +607,16 @@ body:has(#estado-toggle:checked) .Andy .Ficha {
         background-color: #000000;
         border: 2px solid #80106d;
     }
+            .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: 80106d;
+                box-shadow: -320px 0 0 320px #c41ca8;
+    }
+
+    .fraction-control input[type="range"] {
+        background-color: #000000;
+        border: 2px solid 80106d;
+    }
 }
 
 .Deimos .Ficha{
@@ -580,6 +646,16 @@ body:has(#estado-toggle:checked) .Deimos .Ficha {
         color: #be4fff;
     }
     .FichaUH {
+        background-color: #000000;
+        border: 2px solid #1f0442;
+    }
+            .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: #1f0442;
+                box-shadow: -320px 0 0 320px #570e66;
+    }
+
+    .fraction-control input[type="range"] {
         background-color: #000000;
         border: 2px solid #1f0442;
     }
@@ -615,6 +691,16 @@ body:has(#estado-toggle:checked) .Guh .Ficha {
         background-color: #0096CD;
         border: 2px solid #0b0264;
     }
+            .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: #0b0264;
+                box-shadow: -320px 0 0 320px #007896;
+    }
+
+    .fraction-control input[type="range"] {
+        background-color: #0096CD;
+        border: 2px solid #0b0264;
+    }
 }
 
 /*.Holder .Ficha{
@@ -647,4 +733,14 @@ body:has(#estado-toggle:checked) .Holder .Ficha {
         background-color: #000000;
         border: 2px solid #888888;
     }
-}*/
+                .fraction-control input[type="range"]::-webkit-slider-thumb {
+
+                background-color: #888888;
+                box-shadow: -320px 0 0 320px #770000;
+    }
+
+    .fraction-control input[type="range"] {
+        background-color: #000000;
+        border: 2px solid #888888;
+    }
+}
